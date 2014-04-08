@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*- 
+txt = raw_input('Введите текст: ')
 import webbrowser
 a = 'http://dnevnik-galina.diary.ru/?newpost#vbform'
 b = 'http://www.livejournal.com/update.bml'

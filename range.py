@@ -1,0 +1,3 @@
+#!/usr/bin/env python
+for x in range(2 - 10):
+    print x
