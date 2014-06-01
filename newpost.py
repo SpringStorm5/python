@@ -24,7 +24,7 @@ class InputDialog(QtGui.QWidget):
        QtGui.QWidget.__init__(self, parent)
        self.setGeometry(600, 100, 500, 200)
        self.setWindowTitle('newpost')
-       self.button = QtGui.QPushButton('Ввод', self)
+       self.button = QtGui.QPushButton('Enter', self)
        self.button.setFocusPolicy(QtCore.Qt.NoFocus)
        self.button.move(20, 20)
        self.connect(self.button, QtCore.SIGNAL('clicked()'), self.enterbrowser)
@@ -43,7 +43,7 @@ class InputDialog(QtGui.QWidget):
 	webbrowser.open(b)
 	webbrowser.open(c)
 	d = self.label.text()
-	print(d)
+	print(unicode(d))
 
 app = QtGui.QApplication(sys.argv)
 icon = InputDialog()
